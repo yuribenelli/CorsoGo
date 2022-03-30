@@ -21,6 +21,7 @@ func main() {
 		if bet > currMoney {
 			fmt.Println("Non hai abbastanza soldi.\n", currMoney)
 			canBet = false
+
 		}
 		if bet <= 0 {
 			fmt.Printf("La scommessa deve avere,come importo, un numero maggiore di zero\n")
