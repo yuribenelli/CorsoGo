@@ -19,7 +19,7 @@ func main() {
 
 		// Controllo input
 		if bet > currMoney {
-			fmt.Printf("Non hai abbastanza soldi.\n", currMoney)
+			fmt.Println("Non hai abbastanza soldi.\n", currMoney)
 			canBet = false
 		}
 		if bet <= 0 {
