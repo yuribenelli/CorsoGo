@@ -19,11 +19,11 @@ func main() {
 
 		// Controllo input
 		if bet > currMoney {
-			fmt.Printf("Non hai abbastanza soldi.\n", currMoney)
+			fmt.Print("Non hai abbastanza soldi.\n")
 			canBet = false
 		}
 		if bet <= 0 {
-			fmt.Printf("La scommessa deve avere,come importo, un numero maggiore di zero\n")
+			fmt.Print("La scommessa deve avere,come importo, un numero maggiore di zero\n")
 			canBet = false
 		}
 		if canBet {
@@ -44,7 +44,7 @@ func main() {
 				currMoney = currMoney - bet
 				fmt.Printf("Non hai vinto. Ritenta! Il tuo patrimonio è di %v crediti\n", currMoney)
 			}
-			fmt.Printf("Vuoi giocare ancora? y/n\n")
+			fmt.Print("Vuoi giocare ancora? y/n\n")
 			goOnChoice := ""
 			fmt.Scan(&goOnChoice)
 			switch goOnChoice {
