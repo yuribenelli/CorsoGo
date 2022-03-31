@@ -72,7 +72,7 @@ func main() {
 	}
 	mySedan := sedan{
 		vehicle: vehicle{
-			doors: 3,
+			doors: 4,
 			color: "red",
 		},
 		luxury: true,
@@ -104,5 +104,6 @@ func main() {
 		Cognome: "Benelli",
 		Anni:    38,
 	}
+
 	fmt.Println(miaStruttura)
 }
